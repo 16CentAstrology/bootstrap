@@ -30,6 +30,7 @@
   flex-direction: column;
   min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
   height: var(--#{$prefix}card-height);
+  color: var(--#{$prefix}body-color);
   word-wrap: break-word;
   background-color: var(--#{$prefix}card-bg);
   background-clip: border-box;
@@ -192,8 +193,7 @@
     // The child selector allows nested `.card` within `.card-group`
     // to display properly.
     > .card {
-      // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
-      flex: 1 0 0%;
+      flex: 1 0 0;
       margin-bottom: 0;
 
       + .card {
